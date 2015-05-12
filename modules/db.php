@@ -258,7 +258,10 @@ class db
                             $info=$this->get_data("SELECT * FROM boss WHERE id='$id';");
                             break;
                         case "count_by_id":	
-                            $id=mysqli_real_escape_string($this->cn,$data['id']);                            
+                            $id=mysqli_real_escape_string($this->cn,$data['id']); 
+                            
+                            $a = $id + 7;
+                        
                             $info=$this->get_data("SELECT COUNT(*) AS aux FROM boss WHERE id='$id';");
                             break;
                     }
