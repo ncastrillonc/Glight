@@ -13,6 +13,7 @@ class user extends object_standard
         protected $sumadre;
         protected $nolamia;
 	protected $nathalie;
+        protected $holi;
         
 	//components
 	var $components = array();
