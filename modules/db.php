@@ -81,7 +81,15 @@ class db
 	{
             switch($options['lvl1'])
             {																																																																																													
-                case "user":
+                case "useruser":
+                switch($options['lvl2'])
+                {
+                    case "normal":
+                        //
+                        break;
+                }
+                break;
+                case "camilo":
                 switch($options['lvl2'])
                 {
                     case "normal":
@@ -257,8 +265,13 @@ class db
                             $id=mysqli_real_escape_string($this->cn,$data['id']);
                             $info=$this->get_data("SELECT * FROM boss WHERE id='$id';");
                             break;
+                        // Holiiiiiiii
+                        
                         case "count_by_id":	
-                            $id=mysqli_real_escape_string($this->cn,$data['id']);                            
+                            $id=mysqli_real_escape_string($this->cn,$data['id']); 
+                            
+                            $a = $id + 7;
+                        
                             $info=$this->get_data("SELECT COUNT(*) AS aux FROM boss WHERE id='$id';");
                             break;
                     }
@@ -291,6 +304,14 @@ class db
                             $id=mysqli_real_escape_string($this->cn,$data['id']);
                             $info=$this->get_data("SELECT * FROM finca WHERE id='$id';");
                             break;
+                        
+                        // lolololol
+                        case "count_by_id":	
+                            $iden=mysqli_real_escape_string($this->cn,$data['id']);                            
+                            $info=$this->get_data("SELECT COUNT(*) AS contador FROM finca WHERE id='$iden';");
+                            break;
+                        // lalalalla
+                        
                         case "by_granjero":	
                             $granjero=mysqli_real_escape_string($this->cn,$data['granjero']);
                             $info=$this->get_data("SELECT * FROM finca WHERE granjero='$granjero';");
