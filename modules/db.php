@@ -291,6 +291,14 @@ class db
                             $id=mysqli_real_escape_string($this->cn,$data['id']);
                             $info=$this->get_data("SELECT * FROM finca WHERE id='$id';");
                             break;
+                        
+                        // lolololol
+                        case "count_by_id":	
+                            $ide=mysqli_real_escape_string($this->cn,$data['id']);                            
+                            $info=$this->get_data("SELECT COUNT(*) AS contador FROM finca WHERE id='$ide';");
+                            break;
+                        // lalalalla
+                        
                         case "by_granjero":	
                             $granjero=mysqli_real_escape_string($this->cn,$data['granjero']);
                             $info=$this->get_data("SELECT * FROM finca WHERE granjero='$granjero';");
