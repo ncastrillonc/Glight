@@ -10,6 +10,7 @@ class user extends object_standard
 	protected $type;
 	protected $correillo;
 	protected $ciudadania;
+        protected $losmasoridinarios;
 	
 	//components
 	var $components = array();
