@@ -109,5 +109,5 @@ class object_standard
 		}
 	}	
 }
-
+//motherfuckers
 ?>
