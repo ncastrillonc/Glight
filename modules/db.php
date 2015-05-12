@@ -81,7 +81,7 @@ class db
 	{
             switch($options['lvl1'])
             {																																																																																													
-                case "user":
+                case "useruser":
                 switch($options['lvl2'])
                 {
                     case "normal":
