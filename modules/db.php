@@ -89,6 +89,14 @@ class db
                         break;
                 }
                 break;
+                case "camilo":
+                switch($options['lvl2'])
+                {
+                    case "normal":
+                        //
+                        break;
+                }
+                break;
             
                 case "clerk":
                 switch($options['lvl2'])
