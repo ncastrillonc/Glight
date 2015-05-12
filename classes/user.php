@@ -9,6 +9,7 @@ class user extends object_standard
 	protected $password;
 	protected $type;
 	protected $email;
+	protected $mejorlasuya;
         protected $sumadre;
         protected $nolamia;
 	
