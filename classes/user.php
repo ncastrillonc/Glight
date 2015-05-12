@@ -2,13 +2,14 @@
  
 class user extends object_standard
 {
-	//attributes
+	//Holi soy un user
 	protected $id;
 	protected $name;
 	protected $user;
 	protected $password;
 	protected $type;
-	protected $email;
+	protected $correillo;
+	protected $ciudadania;
 	
 	//components
 	var $components = array();
