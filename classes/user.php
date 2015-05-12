@@ -8,10 +8,11 @@ class user extends object_standard
 	protected $user;
 	protected $password;
 	protected $type;
-	protected $correillo;
-	protected $ciudadania;
-        protected $losmasoridinarios;
-	
+	protected $email;
+	protected $mejorlasuya;
+        protected $sumadre;
+        protected $nolamia;
+	protected $nathalie;
         
 	//components
 	var $components = array();
