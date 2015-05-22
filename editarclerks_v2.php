@@ -1,5 +1,5 @@
 <?php
-
+// Holi!! Lo logréeee
 // 1 problema: no recoge el id viejo
 
 require('configs/include.php');
